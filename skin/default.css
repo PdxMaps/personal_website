@@ -1,21 +1,21 @@
 /*
 #1 = 35A49C
-#2 = 79CDC0
+#2 = 1d33e0
 */
 a {
 	color: #35A49C;
 }
 a:hover {
-	color: #79CDC0;
+	color: #1d33e0;
 }
 
 /* menu */
 .nav>li>a:hover {
-	color: #79CDC0;
+	color: #1d33e0;
 }
 
 .navbar .navbar-nav > .active > a {
-	color: #79CDC0;
+	color: #1d33e0;
 }
 
 /* flexslider */
@@ -28,7 +28,7 @@ a:hover {
 }
 
 .testimonial span.author a {
-	color: #79CDC0;
+	color: #1d33e0;
 }
 
 /* --- icon box hover --- */
@@ -38,7 +38,7 @@ a:hover {
 }
 .no-touch .hi-icon-effect-5 .hi-icon:hover {
 	background: #35A49C;
-	box-shadow: 0 0 0 8px  #79CDC0;
+	box-shadow: 0 0 0 8px  #1d33e0;
 }
 
 
@@ -49,14 +49,14 @@ a:hover {
 
 /* btn */
 .btn-theme {
-  background: #79CDC0;
+  background: #1d33e0;
 }
 .btn-theme:hover,.btn-theme:focus,.btn-theme:active{
   background: #35A49C;
 }
 .btn-cta,.btn-cta.btn-lg {
   background: #35A49C;
-  border-color: #79CDC0;
+  border-color: #1d33e0;
 }
 
 .btn-cta:focus,.btn-cta:active{
