@@ -21,7 +21,12 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-    
+     <script type="text/javascript">
+    function cutHash()
+        {
+          window.location.href = window.location.href.split('#')[0]
+        };
+    </script>
   </head>
 
   <body id="page-top">
@@ -406,7 +411,50 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/freelancer.min.js"></script>
+	<script>
+	  $(document).ready(function() {
 
+    if(window.location.hash) {
+      window.history.pushState(window.location.hash, 'Jackson Voelkel', '/new/doc');
+    } else {}
+
+    //$('#uhi3d_iframe').attr('src','https://climatecope.research.pdx.edu/UHI/3d');
+    //$('#uhi_iframe').attr('src','https://climatecope.research.pdx.edu/UHI');
+    //$('#3d_iframe').attr('src','./interactive/3d/asdf.html#cx=-38.545305355936456&cy=461.004435788636&cz=173.8422999661691&tx=0.542144822094723&ty=-1.011347088646642&tz=33.85370475538865');
+    //$('#plant_iframe').attr('src','https://climatecope.research.pdx.edu/plant');
+    //$('#canan_iframe').attr('src','https://climatecope.research.pdx.edu/canopyanalytics');
+    //$('#condec_iframe').attr('src','https://climatecope.research.pdx.edu/condec');
+  });
+  
+	$('div.modal').on('show.bs.modal', function() {
+		var modal = this;
+		var hash = modal.id;
+		window.location.hash = hash;
+		window.onhashchange = function() {
+			window.history.pushState(window.location.hash, 'Jackson Voelkel', '/new/doc');
+			if (!location.hash){
+				$(modal).modal('hide');
+			}
+		}
+	});
+	
+	$('div.modal').on('hidden.bs.modal', function() {
+		var hash = this.id;
+		history.replaceState('', document.title, window.location.pathname);
+	});
+
+	// when close button clicked simulate back
+	$('div.modal button.close').on('click', function(){
+		window.history.back();
+	})
+
+	// when esc pressed when modal open simulate back
+	$('div.modal').keyup(function(e) {
+		if (e.keyCode == 27){
+			window.history.back();          
+		}
+	});
+	</script>
   </body>
 
 </html>
