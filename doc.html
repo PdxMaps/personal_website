@@ -334,7 +334,7 @@
             <h4 style='text-align:center;'>Here are files related to my studies. Most of them are locked, so <a href="./#contact" class="nav-link js-scroll-trigger" style="color:black">contact me</a> if you have a reason to look at them!</h4>
           </div>
 		  <div class="col-lg-8 mx-auto text-center">
-            <a href="./mus" class="btn btn-lg btn-outline">
+            <a href="./mus.html" class="btn btn-lg btn-outline">
               <i class="fa fa-download"></i>
               Fall down the rabbit hole.
             </a>
@@ -415,7 +415,7 @@
 	  $(document).ready(function() {
 
     if(window.location.hash) {
-      window.history.pushState(window.location.hash, 'Jackson Voelkel', '/new/doc');
+      window.history.pushState(window.location.hash, 'Jackson Voelkel', '/doc');
     } else {}
 
     //$('#uhi3d_iframe').attr('src','https://climatecope.research.pdx.edu/UHI/3d');
@@ -431,7 +431,7 @@
 		var hash = modal.id;
 		window.location.hash = hash;
 		window.onhashchange = function() {
-			window.history.pushState(window.location.hash, 'Jackson Voelkel', '/new/doc');
+			window.history.pushState(window.location.hash, 'Jackson Voelkel', '/doc');
 			if (!location.hash){
 				$(modal).modal('hide');
 			}

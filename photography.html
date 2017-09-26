@@ -196,7 +196,7 @@
 	  $(document).ready(function() {
 
     if(window.location.hash) {
-      window.history.pushState(window.location.hash, 'Jackson Voelkel', '/new/photography');
+      window.history.pushState(window.location.hash, 'Jackson Voelkel', '/photography');
     } else {}
 
     //$('#uhi3d_iframe').attr('src','https://climatecope.research.pdx.edu/UHI/3d');
@@ -212,7 +212,7 @@
 		var hash = modal.id;
 		window.location.hash = hash;
 		window.onhashchange = function() {
-			window.history.pushState(window.location.hash, 'Jackson Voelkel', '/new/photography');
+			window.history.pushState(window.location.hash, 'Jackson Voelkel', '/photography');
 			if (!location.hash){
 				$(modal).modal('hide');
 			}
