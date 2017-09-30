@@ -106,13 +106,13 @@
 		"http://www.jacksonvoelkel.com/portfolio/images/_DSC9480.jpg",
 		"http://www.jacksonvoelkel.com/portfolio/images/memorial.jpg",
 		"http://www.jacksonvoelkel.com/portfolio/images/testsetsetsetsetset_5.jpg",
-		"http://www.jacksonvoelkel.com/portfolio/images/z_On_Tower_Bridge_SQUARE.jpg"]		
+		"http://www.jacksonvoelkel.com/portfolio/images/z_On_Tower_Bridge_SQUARE.jpg"]
 	</script>
-	
+
 	</div>
         <div id="gal" class="row" >
         </div>
-	
+
 	<script>
 		for (var i = 0, len = photos.length; i<len; i++){
 			var asdf = '<a style="display:flex;justify-content:center; align-items:center;" href=' + photos[i] + ' data-toggle="lightbox" data-gallery="example-gallery" class="col-md-3"><img src=' + photos[i]+ ' class="img-fluid" style="display:flex;margin-top:auto; margin-bottom: auto;padding-bottom:10px; justify-content:center; align-items:center;"></a>' //;max-height:300px
@@ -200,7 +200,7 @@
 		event.preventDefault();
 		$(this).ekkoLightbox();
 	});
-	
+
 	</script>
 	<script>
 	  $(document).ready(function() {
@@ -216,7 +216,7 @@
     //$('#canan_iframe').attr('src','https://climatecope.research.pdx.edu/canopyanalytics');
     //$('#condec_iframe').attr('src','https://climatecope.research.pdx.edu/condec');
   });
-  
+
 	$('div.modal').on('show.bs.modal', function() {
 		var modal = this;
 		var hash = modal.id;
@@ -242,7 +242,7 @@
 	// when esc pressed when modal open simulate back
 	$('div.modal').keyup(function(e) {
 		if (e.keyCode == 27){
-			window.history.back();          
+			window.history.back();
 		}
 	});
 	</script>
