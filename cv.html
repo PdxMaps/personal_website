@@ -1,8 +1,57 @@
-<!DOCTYPE html>
-<body>
+<html lang="en"><head>
 
-			<h3>Education</h3>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Jackson Voelkel, Portland, Oregon GIS, Data, and Remote Sensing Analyst.">
+    <meta name="author" content="Jackson Voelkel">
 
+    <title>Jackson Voelkel | CV</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	  <link href="vendor/academic-icons/css/academicons.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/freelancer.min.css" rel="stylesheet">
+	<style>
+	p {
+		font-size: 14px;
+	}
+	li {
+		font-size: 14px;
+	}
+	@page {
+		margin-left: 0.75in;
+		margin-right: 0.9in;
+		margin-top: 0.9in;
+		margin-bottom: 0.9in;
+	}
+	
+	.cv {
+		padding-left: 0;
+		padding-right: 0;
+		padding-bottom: 0;
+		padding-top: 0; /* for pdf, set this to 0!!*/
+	}
+	</style>
+  </head>
+
+  <body id="page-top">
+	<section class="cv">
+      <div class="container">
+        <h3 class="text-center">Jackson Voelkel</h3>
+		<h4 class="text-center">Curriculum Vitae</h4>
+		<a href="http://jacksonvoelkel.com" target="_blank">
+		<h5 class="text-center">jacksonvoelkel.com</h5>
+		</a>
+        <hr class="star-primary">
+        <div class="col-lg-12 mx-auto">
+			<h5>Education</h5>
 			<ul>
 			  <li><i>Master of Urban Studies (MUS)</i> (2017, current student), Portland State University, Portland, Oregon.
 			  <br><u>Concentrations</u>: Geocomputation, urban spatial modeling
@@ -11,112 +60,131 @@
 			  <li><i>BA Geography</i> (2014), Portland State University, Portland, Oregon<br>
 			  <u>Minor</u>: Geographic Information systems</li>
 			</ul>
-
 			<br>
-			<h3>Work Experience</h3>
-
+			<h5>Work Experience</h5>
 			<ul>
-			  <li><i>Geospatial Research Analyst</i>, 2014 &ndash; Current
+			  <li><i>Geospatial Research Analyst</i>, 2014 – Current
 			  <br>Sustaining Urban Places Research Lab (SUPR Lab), Portland State University
-			  <br>Projects:
-				<ul>
-				  <li>CWS (Dasymetric and forcasting)</li>
-				  <li>Metro (canopy classification)</li>
-				  <li>BPS (Vulnerability tool)</li>
-				  <li>PP&R Urban Forestry (Plantability tool)</li>
-				  <li>Urban heat work (Portland, Eugene, Hermosillo, Richmond, Surrey)</li>
-				</ul>
+        <br><u>Projects</u>: See "Research Projects" below</li><br>
 
-			  <br>
 			  <li><i>Graduate Research Assistant</i>, 2016 – Current
 			  <br>Toulan School of Urban Studies and Planning, Portland State University
-			  <br><u>Projects</u>: DVS, Plantabilty</li>
+			  <br><u>Projects</u>: Overlaps with <i>Geospatial Research Analyst</i> position - see "Research Projects" below</li>
 
 			  <br>
 			  <li><i>Cartographer II, 2014</i>
 			  <br>Center for Spatial Analysis and Research (CSAR), Portland State University
-			  <br><u>Projects</u>: Cultural Atlas of Portland</li>
+			  <br><u>Projects</u>: Assisted in the creation of <a href="https://www.amazon.com/Portlandness-Cultural-Atlas-David-Banis/dp/1632170000" target="_blank">
+          <i>Portlandness: A Cultural Atlas</i>
+        </a> through map creation and research.</li>
 			</ul>
-
-
 			<br>
-			<h3>Research Projects</h3>
+			<h5>Research Projects</h5>
+      <ul>
+        <li><b>Nitrogen Dioxide Mitigation and High-Resolution Population Mapping</b><br><p>
+          This project was a collaboration between the Sustaining Urban Places Research Lab, Willamette Partnership, and Clean Water Services. The aim of the project was to assess the reduction in vehicular emissions due to a massive tree planting campaign led by Clean Water Services.
+          Alongside multi-year canopy growth scenarios and pollution mitigation models, I created a high-resolution (1ft) dasymetric population map for the tri-county area which allowed for direct health impacts to be analyzed.
+        </p></li>
 
-			<ul>
-			  <li>Condec. Published in Oregon Metro’s Regional Land Information System (RLIS).</li>
-			  <li>Canopy Analytics</li>
-			  <li>Urban Heat Island Assessments <ul>
-				  <li>Portland</li>
-				  <li>Eugene</li>
-				  <li>Hermosillo</li>
-				  <li>Richmond</li>
-				  <li>Surrey</li>
-				</ul></li>
-			  <li>Clean water services</li>
-			  <li>Plantability Assessment. Portland Parks and Recreation Urban Forestry</li>
-			  <li>PDX Resiliency Application</li>
-			  <li>Data Visualization Studio</li>
-			</ul>
+        <li><b>Deciduous / Evergreen Canopy Classification</b><p>
+          This data was created in collaboration with Oregon Metro and published in the Regional Land Information System (RLIS).
+          The classification has a high overall accuracy (88%; Kappa = 0.75) and a spatial resolution of 1m². In order to attain such a high accuracy, we developed an ensemble machine learning system which incorporated techniques such as Neural Networks, Random Forests, and Support Vector Machines. The ensable was trained on ~900 variables which included trigonometric crown measures, spectral indices, and localized terrain characteristics. In addition to the classification, this project also identified ~13.4 million trees in the Portland metro area.
+        </p></li>
+        <li><b>Vulnerability and Urban Heat</b><br><p>
+          This project seeks to provide information to public health and planning practitioners as to the resiliency of specific sub-neighborhoods in Portland, Oregon in terms of environmental health detriments. The tool allows the user to specify weights of multiple variables that reduce an individual's ability to cope to environmental stressors, which updates the map with locations most pertinent to the user. This socio-environmental analysis was developed through a multi-stage interagency multi-criteria decision making exercise. The following agencies, bureaus, and organizations were involved in the process:
+            </p><ul>
+              <li>Institute for Sustainable Solutions, Portland State University</li>
+              <li>Sustaining Urban Places Research Lab</li>
+              <li>Bureau of Planning and Sustainability, City of Portland, Oregon</li>
+              <li>Bureau of Environmental Services, City of Portland, Oregon</li>
+              <li>Department of Environmental Quality, State of Oregon</li>
+              <li>Multnomah County, Oregon</li>
+              <li>Oregon Health Authority, State of Oregon</li>
+              <li>Oregon Public Health Institute</li>
+              <li>Coalition for a Livable Future</li>
+            </ul>
 
+        <p></p></li>
+
+        <li><b>Portland Parks and Recreation Urban Forestry Plantability Tool</b><br><p>
+            The Plantability tool is part of a substantial effort by Portland Parks and Recreation Urban Forestry and the Sustaining Urban Places Research Lab to understand the social, environmental, and technical aspects involved in increasing the overall canopy cover within the city. The development of this tool included collaboration with multiple community groups and public agencies and bureaus.
+        </p></li>
+
+        <li><b>Urban Heat Island Research</b><br><p>
+            Quantifying and mapping spatial patterns of extreme intra-urban heat variability was my main focus during my time as a Geospatial Research Analyst at the SUPR Lab. As I transitioned into graduate school, I continued researching better ways to identify areas of cities where people are most at risk. A major difference between the method used in my research and common methods were the in-situ (or, "on the ground") measurements taken in the field. These measurements allow for high-resolution and high-accuracy machine-learning models to be created, as opposed to low-resolution and low-accuracy satellite data employed in other studies. This research eventually moved beyond Portland, and I have worked with local governments, non-profits, and universities to accomplish field data collection in:
+              </p><ul>
+                <li>The greater Portland Metropolitan Area</li>
+                <li>Eugene, Oregon, USA</li>
+                <li>Richmond, Virginia, USA</li>
+                <li>Hermosillo, Sonora, Mexico</li>
+                <li>Surrey, British Columbia, Canada</li>
+              </ul>
+        <p></p></li>
+
+        <li><b>LiDAR Processing and Classification</b><br><p>
+            Throughout my time at the Sustaining Urban Places Research Lab and during my Masters of Urban Studies research, LiDAR has been a constant focus. Using a combination of proprietary and open-source tools, I have processed several terabytes of 3D pointcloud data and converted it into useable vector and raster GIS datasets.
+        </p></li>
+
+        <li><b>Urban Forest Descriptions</b><br><p>
+            Through extensive remote sensing and LiDAR exercises, I have created unique descriptors of Portland, Oregon's urban forests. Throughout presentations with various government and community groups, I have shared my findings in hopes of raising awareness of the magnificent trees that surround us.
+        </p></li>
+
+        <li><b>Canopy Analytics Tool</b><br><p>
+            The Canopy Analytics tool was developed in order to identify large trees (which contribute greatly to reductions in temperatures in air pollution) that are most in need of preservation. The tool allows users to specify heights, building distances, and other factors that the City of Portland deems crucial in determining the risk a tree has of being removed.
+        </p></li>
+
+      </ul>
 			<br>
-			<h3>Presentations</h3>
+			<h5>Presentations</h5>
 			<ul>
 				<br>
-				<h4>Presentation</h4>
+				<h6>Presentation</h6>
+				<li>Jackson Voelkel (2017). Towards Systematic Prediction of Urban Heat Islands. XIX International Botanical Congress – International Symposium on the Study of Advanced Ecological System Monitoring, Shenzhen, China.</li>
+				<li>Jackson Voelkel (2017). R for Spatial Analysis. GIS in Action, Portland, Oregon.</li>
 				<li>Jackson Voelkel (2016). Canopy Analytics. Portland Parks and Recreation Urban Forestry Tree Inventory Summit, Portland, Oregon.</li>
 				<li>Jackson Voelkel (2016). Urban Canopy: Methods and Tools for Assessing Trees in the Portland Metro Area. City of Oregon City Natural Resources Committee.</li>
-				<li>Jackson Voelkel (2017). Towards Systematic Prediction of Urban Heat Islands. XIX International Botanical Congress – International Symposium on the Study of Advanced Ecological System Monitoring, Shenzhen, China.</li>
+				<li>Jackson Voelkel (2016). Maintaining Magnificence: Interactive Resources for Tree Discovery in the Portland Metro Area. Oregon Community Trees Conference.</li>
 				<li>Jackson Voelkel, Vivek Shandas (2016). Analytics for Characterizing Urban Heat Islands in Data Rich and Data Poor Locations. Portland State University Systems Science Seminar Series, Portland, Oregon.</li>
 				<li>Jackson Voelkel (2016). Keynote Address: Canopy Analytics – An interactive resource for tree discovery in the Portland Metro Area. West Multnomah Soil and Water Conservation District Annual Meeting, Portland, Oregon.</li>
 				<li>Jackson Voelkel (2016). Canopy Story. Annual Urban and Community Forestry Conference, Portland, Oregon.</li>
 				<li>Jackson Voelkel (2016). R for Spatial Analysis. Portland State University ASPRS Student Chapter Speaker Series, Portland, Oregon.</li>
-				<li>Jackson Voelkel (2017). R for Spatial Analysis. GIS in Action, Portland, Oregon.</li>
+
 				<li>Jackson Voelkel (2016). Evaluating Urban Heat Islands: A case study from Portland, Oregon. GIS in Action, Portland, Oregon.</li>
 				<li>Jackson Voelkel (2015). Evaluating Green Infrastructure: Fostering Interdisciplinary Research and Community Engagement. Part III: Urban Heat Islands in a Non-Desert Environment. University of Nagoya, Nagoya, Japan; University of Hokkaido, Hokkaido, Japan; Architectural Institute of Japan, Tokyo, Japan. [Lecture Series]</li>
 				<br>
-				<h4>Poster</h4>
-				<li>Voelkel, J., Shandas, V., Rao, M., & Thompson, A. (2015). Geocomputation for Urban Planning in the Era of Big Data: Developing Automated Tools for Analyzing LiDAR data to Inform Urban Planning and Policy in Portland, OR. Geocomputation, University of Texas, Dallas, Texas.</li>
+				<h6>Poster</h6>
+				<li>Voelkel, J., Shandas, V., Rao, M., &amp; Thompson, A. (2015). Geocomputation for Urban Planning in the Era of Big Data: Developing Automated Tools for Analyzing LiDAR data to Inform Urban Planning and Policy in Portland, OR. Geocomputation, University of Texas, Dallas, Texas.</li>
 				<li>Jackson Voelkel, Vivek Shandas, Anandi van Diepen-Hedayat, Meenakshi Rao, Linda George. Toward neighborhood-scale climate adaptation: stakeholders, strategies, and decision support. Presented at the 14th Annual Urban Ecology and Conservation Symposium, Portland, Oregon, USA</li>
 				<li>Jackson Voelkel, Evan Kent, Angel Gomez (2014). Proximity to Pollution: A study of socioeconomic status in Los Angeles County, California. GIS in Action, Portland, Oregon.</li>
 			</ul>
-			
+
 			<br>
-			<h3>Publications</h3>
+			<h5>Publications</h5>
 			<ul>
-			<p>&emsp;&emsp;Voelkel, J., & Shandas, V. (2017). Towards Systematic Prediction of Urban Heat Islands: Grounding Measurements, Assessing Modeling Techniques. <i>Climate</i>, 5(2), 41.</p>
-
-			<p>&emsp;&emsp;Ferwati, S., Skelhorn, C., Shandas, V., Voelkel, J., Shawish, A., & Ghanim, M. (2017). Analysis of urban heat in a corridor environment–The case of Doha, Qatar. Urban Climate.</p>
-
-			<p>&emsp;&emsp;Shandas, V., van Diepen, A., Voelkel, J., & Rao, M. (2016). Coproducing Resilience through Understanding Vulnerability. <i>Building a Climate Resilient Economy and Society – Challenges and Opportunities</i>.</p>
-
-			<p>&emsp;&emsp;Voelkel, J., Shandas, V., & Haggerty, B. (2016). Developing High-Resolution Descriptions of Urban Heat Islands: A Public Health Imperative. <i>Preventing chronic disease</i>, 13.</p>
-
-			<p>&emsp;&emsp;Shandas, V., Voelkel, J., Rao, M., & George, L. (2016). Integrating High-Resolution Datasets to Target Mitigation Efforts for Improving Air Quality and Public Health in Urban Neighborhoods. <i>International journal of environmental research and public health</i>, 13(8), 790.</p>
-
-			<p>&emsp;&emsp;Banis, D., & Shobe, H. (2015). <i>Portlandness: A Cultural Atlas</i>. Sasquatch Books. [Contributing Cartographer].</p>
+			<p>&emsp;&emsp;Voelkel, J., &amp; Shandas, V. (2017). Towards Systematic Prediction of Urban Heat Islands: Grounding Measurements, Assessing Modeling Techniques. <i>Climate</i>, 5(2), 41.</p>
+			<p>&emsp;&emsp;Ferwati, S., Skelhorn, C., Shandas, V., Voelkel, J., Shawish, A., &amp; Ghanim, M. (2017). Analysis of urban heat in a corridor environment–The case of Doha, Qatar. Urban Climate.</p>
+			<p>&emsp;&emsp;Shandas, V., van Diepen, A., Voelkel, J., &amp; Rao, M. (2016). Coproducing Resilience through Understanding Vulnerability. <i>Building a Climate Resilient Economy and Society – Challenges and Opportunities</i>.</p>
+			<p>&emsp;&emsp;Voelkel, J., Shandas, V., &amp; Haggerty, B. (2016). Developing High-Resolution Descriptions of Urban Heat Islands: A Public Health Imperative. <i>Preventing chronic disease</i>, 13.</p>
+			<p>&emsp;&emsp;Shandas, V., Voelkel, J., Rao, M., &amp; George, L. (2016). Integrating High-Resolution Datasets to Target Mitigation Efforts for Improving Air Quality and Public Health in Urban Neighborhoods. <i>International journal of environmental research and public health</i>, 13(8), 790.</p>
+			<p>&emsp;&emsp;Banis, D., &amp; Shobe, H. (2015). <i>Portlandness: A Cultural Atlas</i>. Sasquatch Books. [Contributing Cartographer].</p>
 			</ul>
 
 			<br>
-			<h3>Skills</h3>
+			<h5>Skills</h5>
 			<br>
 			<ul>
-				<li><h4>GIS</h4></li>
+				<li><h6>GIS</h6></li>
 				<p>Custom tool creation, data creation and manipulation, advanced raster processing and analysis, automation, remote sensing (air- and space-borne, including hyperspectral and thermal), LiDAR analysis, webmapping (Leaflet, OpenLayers 3), database design and normalization (ESRI File Geodatabase, PostgreSQL/PostGIS)</p>
-
-				<li><h4>Statistics and Modeling</h4></li>
-				<p>Explanitory and predictive, Logistic Regression, Machine learning (Support Vector Machines, Random Forests, and Neural Networks), accuracy assessments, spatial statistics (including geographically weighted regression).</p>
-
-				<li><h4>Highly comfortable in all operating Systems</h4></li>
+				<li><h6>Statistics and Modeling</h6></li>
+				<p>Explanatory and predictive, Logistic Regression, Machine learning (Support Vector Machines, Random Forests, and Neural Networks), accuracy assessments, spatial statistics (including geographically weighted regression).</p>
+				<li><h6>Highly comfortable in all operating Systems</h6></li>
 				<p>Microsoft Windows 7 and 10, OSX, UNIX/Linux</p>
-
-				<li><h4>Languages</h4></li>
+				<li><h6>Languages</h6></li>
 				<p>R (as both a utilitarian language and a statistics application), Python (with comprehensive ArcPy knowledge), Bash / Command Line, HTML, CSS, JavaScript, SQL, IDL (ENVI LiDAR API)</p>
-
-				<li><h4>Software</h4></li>
+				<li><h6>Software</h6></li>
 				<p>R/Rstudio, ArcGIS Suite, QGIS, GRASS, SAGA GIS, Microsoft Office / Libreoffice, Terminal / CMD, PgAdmin, Adobe Creative Suite (with specialties in a Photoshop, Illustrator, and InDesign), open source graphics software (GIMP, InkScape), Zotero Citation Management</p>
-
 			</ul>
-			<br>
-			<h3>Press</h3>
-</body>
-</html>
+        </div>
+        </div>
+    </section>
+</body></html>
