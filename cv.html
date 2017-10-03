@@ -1,6 +1,4 @@
-<html lang="en">
-
-	<head>
+<html lang="en"><head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -24,6 +22,7 @@
   </head>
 
   <body id="page-top">
+    <div style="height:65px" class="no-print"></div>
 	  <div id="header" class="container">
         <h3 class="text-center">Jackson Voelkel</h3>
 		<h4 class="text-center">Curriculum Vitae</h4>
@@ -49,6 +48,13 @@
 				margin-bottom: 0.9in;
 			}
 			
+    @media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
 			.cv {
 				padding-left: 0;
 				padding-right: 0;
@@ -143,7 +149,7 @@
       </ul>
 			<br>
 			<h5>Presentations</h5>
-			<ul  class="cv_text">
+			<ul class="cv_text">
 				<br>
 				<h6>Presentation</h6>
 				<li>Jackson Voelkel (2017). Towards Systematic Prediction of Urban Heat Islands. XIX International Botanical Congress – International Symposium on the Study of Advanced Ecological System Monitoring, Shenzhen, China.</li>
@@ -180,7 +186,7 @@
 			<br>
 			<h5>Skills</h5>
 			<br>
-			<ul  class="cv_text">
+			<ul class="cv_text">
 				<li><h6>GIS</h6></li>
 				<p>Custom tool creation, data creation and manipulation, advanced raster processing and analysis, automation, remote sensing (air- and space-borne, including hyperspectral and thermal), LiDAR analysis, webmapping (Leaflet, OpenLayers 3), database design and normalization (ESRI File Geodatabase, PostgreSQL/PostGIS)</p>
 				<li><h6>Statistics and Modeling</h6></li>
