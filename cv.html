@@ -1,4 +1,6 @@
-<html lang="en"><head>
+<html lang="en">
+
+	<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -18,41 +20,46 @@
 
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
-	<style>
-	p {
-		font-size: 14px;
-	}
-	li {
-		font-size: 14px;
-	}
-	@page {
-		margin-left: 0.75in;
-		margin-right: 0.9in;
-		margin-top: 0.9in;
-		margin-bottom: 0.9in;
-	}
 	
-	.cv {
-		padding-left: 0;
-		padding-right: 0;
-		padding-bottom: 0;
-		padding-top: 0; /* for pdf, set this to 0!!*/
-	}
-	</style>
   </head>
 
   <body id="page-top">
-	<section class="cv">
-      <div class="container">
+	  <div id="header" class="container">
         <h3 class="text-center">Jackson Voelkel</h3>
 		<h4 class="text-center">Curriculum Vitae</h4>
 		<a href="http://jacksonvoelkel.com" target="_blank">
 		<h5 class="text-center">jacksonvoelkel.com</h5>
 		</a>
         <hr class="star-primary">
-        <div class="col-lg-12 mx-auto">
+	</div>
+	<section class="cv">
+    
+	<div id="cv_content" class="container">
+		<style>
+			.cv_text p,
+			.cv_text ul,
+			.cv_text li{
+				font-size: 14px;
+			}
+
+			@page {
+				margin-left: 0.75in;
+				margin-right: 0.9in;
+				margin-top: 0.9in;
+				margin-bottom: 0.9in;
+			}
+			
+			.cv {
+				padding-left: 0;
+				padding-right: 0;
+				padding-bottom: 0;
+				padding-top: 0; /* for pdf, set this to 0!!*/
+			}
+		</style>
+        <div class="col-lg-12 mx-auto" id="cv_text">
+			
 			<h5>Education</h5>
-			<ul>
+			<ul class="cv_text">
 			  <li><i>Master of Urban Studies (MUS)</i> (2017, current student), Portland State University, Portland, Oregon.
 			  <br><u>Concentrations</u>: Geocomputation, urban spatial modeling
 			  <br><u>Thesis</u>: Assessing issues of data quality variation in modeling the urban heat island effect across multiple North American cities.</li>
@@ -62,7 +69,7 @@
 			</ul>
 			<br>
 			<h5>Work Experience</h5>
-			<ul>
+			<ul class="cv_text">
 			  <li><i>Geospatial Research Analyst</i>, 2014 – Current
 			  <br>Sustaining Urban Places Research Lab (SUPR Lab), Portland State University
         <br><u>Projects</u>: See "Research Projects" below</li><br>
@@ -80,7 +87,7 @@
 			</ul>
 			<br>
 			<h5>Research Projects</h5>
-      <ul>
+      <ul class="cv_text">
         <li><b>Nitrogen Dioxide Mitigation and High-Resolution Population Mapping</b><br><p>
           This project was a collaboration between the Sustaining Urban Places Research Lab, Willamette Partnership, and Clean Water Services. The aim of the project was to assess the reduction in vehicular emissions due to a massive tree planting campaign led by Clean Water Services.
           Alongside multi-year canopy growth scenarios and pollution mitigation models, I created a high-resolution (1ft) dasymetric population map for the tri-county area which allowed for direct health impacts to be analyzed.
@@ -92,7 +99,7 @@
         </p></li>
         <li><b>Vulnerability and Urban Heat</b><br><p>
           This project seeks to provide information to public health and planning practitioners as to the resiliency of specific sub-neighborhoods in Portland, Oregon in terms of environmental health detriments. The tool allows the user to specify weights of multiple variables that reduce an individual's ability to cope to environmental stressors, which updates the map with locations most pertinent to the user. This socio-environmental analysis was developed through a multi-stage interagency multi-criteria decision making exercise. The following agencies, bureaus, and organizations were involved in the process:
-            </p><ul>
+            </p><ul class="cv_text">
               <li>Institute for Sustainable Solutions, Portland State University</li>
               <li>Sustaining Urban Places Research Lab</li>
               <li>Bureau of Planning and Sustainability, City of Portland, Oregon</li>
@@ -112,7 +119,7 @@
 
         <li><b>Urban Heat Island Research</b><br><p>
             Quantifying and mapping spatial patterns of extreme intra-urban heat variability was my main focus during my time as a Geospatial Research Analyst at the SUPR Lab. As I transitioned into graduate school, I continued researching better ways to identify areas of cities where people are most at risk. A major difference between the method used in my research and common methods were the in-situ (or, "on the ground") measurements taken in the field. These measurements allow for high-resolution and high-accuracy machine-learning models to be created, as opposed to low-resolution and low-accuracy satellite data employed in other studies. This research eventually moved beyond Portland, and I have worked with local governments, non-profits, and universities to accomplish field data collection in:
-              </p><ul>
+              </p><ul class="cv_text">
                 <li>The greater Portland Metropolitan Area</li>
                 <li>Eugene, Oregon, USA</li>
                 <li>Richmond, Virginia, USA</li>
@@ -136,7 +143,7 @@
       </ul>
 			<br>
 			<h5>Presentations</h5>
-			<ul>
+			<ul  class="cv_text">
 				<br>
 				<h6>Presentation</h6>
 				<li>Jackson Voelkel (2017). Towards Systematic Prediction of Urban Heat Islands. XIX International Botanical Congress – International Symposium on the Study of Advanced Ecological System Monitoring, Shenzhen, China.</li>
@@ -161,7 +168,7 @@
 
 			<br>
 			<h5>Publications</h5>
-			<ul>
+			<ul class="cv_text">
 			<p>&emsp;&emsp;Voelkel, J., &amp; Shandas, V. (2017). Towards Systematic Prediction of Urban Heat Islands: Grounding Measurements, Assessing Modeling Techniques. <i>Climate</i>, 5(2), 41.</p>
 			<p>&emsp;&emsp;Ferwati, S., Skelhorn, C., Shandas, V., Voelkel, J., Shawish, A., &amp; Ghanim, M. (2017). Analysis of urban heat in a corridor environment–The case of Doha, Qatar. Urban Climate.</p>
 			<p>&emsp;&emsp;Shandas, V., van Diepen, A., Voelkel, J., &amp; Rao, M. (2016). Coproducing Resilience through Understanding Vulnerability. <i>Building a Climate Resilient Economy and Society – Challenges and Opportunities</i>.</p>
@@ -173,7 +180,7 @@
 			<br>
 			<h5>Skills</h5>
 			<br>
-			<ul>
+			<ul  class="cv_text">
 				<li><h6>GIS</h6></li>
 				<p>Custom tool creation, data creation and manipulation, advanced raster processing and analysis, automation, remote sensing (air- and space-borne, including hyperspectral and thermal), LiDAR analysis, webmapping (Leaflet, OpenLayers 3), database design and normalization (ESRI File Geodatabase, PostgreSQL/PostGIS)</p>
 				<li><h6>Statistics and Modeling</h6></li>
